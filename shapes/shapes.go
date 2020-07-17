@@ -20,3 +20,11 @@ type Error struct {
 	Code    int
 	Message string
 }
+
+//SignUpData is the data that is received in the request
+type SignUpData struct {
+	Name     string
+	Email    string
+	Quote    string
+	Password string
+}
