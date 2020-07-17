@@ -1,2 +1,3 @@
 run:
-	go run main.go
+	buffalo dev
+
