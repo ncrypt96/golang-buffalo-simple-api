@@ -51,7 +51,6 @@ func App() *buffalo.App {
 		app.Use(contenttype.Set("application/json"))
 
 		app.GET("/", HomeHandler)
-		app.GET("/u/signup", USignup)
 	}
 
 	return app
