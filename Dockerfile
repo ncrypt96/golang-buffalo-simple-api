@@ -19,8 +19,6 @@ ADD . .
 RUN buffalo build --static -o /bin/app
 
 FROM alpine
-RUN apk add --no-cache curl
-RUN apk add --no-cache curl
 RUN apk add --no-cache bash
 RUN apk add --no-cache ca-certificates
 
@@ -39,5 +37,3 @@ EXPOSE 3000
 # Uncomment to run the migrations before running the binary:
 # CMD /bin/app migrate; /bin/app
 CMD exec /bin/app
-
-
