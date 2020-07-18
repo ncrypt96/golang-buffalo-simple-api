@@ -52,6 +52,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 
+		app.POST("/u/add", UAdd)
 	}
 
 	return app
