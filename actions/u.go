@@ -61,3 +61,9 @@ func addUserToDB(bucketName, name, quote string) error {
 	log.Info("Successfully entered name: " + name + " quote: " + quote + " in the database")
 	return nil
 }
+
+// UGet default implementation.
+func UGet(c buffalo.Context) error {
+	return c.Render(http.StatusOK, r.HTML("u/get.html"))
+}
+

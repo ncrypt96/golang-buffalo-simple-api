@@ -53,6 +53,7 @@ func App() *buffalo.App {
 		app.GET("/", HomeHandler)
 
 		app.POST("/u/add", UAdd)
+		app.GET("/u/get", UGet)
 	}
 
 	return app
