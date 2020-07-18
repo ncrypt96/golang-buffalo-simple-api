@@ -21,10 +21,8 @@ type Error struct {
 	Message string
 }
 
-//SignUpData is the data that is received in the request
-type SignUpData struct {
-	Name     string
-	Email    string
-	Quote    string
-	Password string
+//User is the data that is received in the request
+type User struct {
+	Name  string
+	Quote string
 }
