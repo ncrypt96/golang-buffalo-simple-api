@@ -23,12 +23,14 @@ func UAdd(c buffalo.Context) error {
 		panic(err)
 	}
 	//If the parameters are only empty spaces
-	if strings.TrimSpace(u.Name) == "" || strings.TrimSpace(u.Quote) == "" {
+	tName := strings.TrimSpace(u.Name)
+	tQuote := strings.TrimSpace(u.Quote)
+	if tName == "" || tQuote == "" {
 		log.Info("The request did not contain all necessary keys")
 		return c.Render(http.StatusBadRequest, r.JSON(&responsecodes.ErrResponseOnAddMissing))
 	}
 	{
-		err := addUserToDB("users", u.Name, u.Quote)
+		err := addUserToDB("users", tName, tQuote)
 		if err != nil {
 			log.Error(err)
 			return c.Render(http.StatusBadRequest, r.JSON(&responsecodes.ErrResponseDatabase))
