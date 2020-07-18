@@ -26,6 +26,7 @@ jhw.*
 dist/
 generated/
 .vendor/
+*.db
 
 #--GOLANG IGNORE--------------------------------
 

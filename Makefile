@@ -2,5 +2,7 @@ run:
 	buffalo dev
 
 action:
-	buffalo g actions ${root} ${sub}  --skip-template
-	echo generated route: ${root}/${sub}
+	echo r= root directory s= subdirectory m= method
+	echo example: make action r=auth s=signup m=POST
+	buffalo g actions ${r} ${s} --skip-template --method ${m}
+	echo generated ${r}/${s} Method: ${m}

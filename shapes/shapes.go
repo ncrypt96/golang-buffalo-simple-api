@@ -20,3 +20,9 @@ type Error struct {
 	Code    int
 	Message string
 }
+
+//User is the data that is received in the request
+type User struct {
+	Name  string
+	Quote string
+}
