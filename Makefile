@@ -6,3 +6,6 @@ action:
 	echo example: make action r=auth s=signup m=POST
 	buffalo g actions ${r} ${s} --skip-template --method ${m}
 	echo generated ${r}/${s} Method: ${m}
+
+build:
+	buffalo build
