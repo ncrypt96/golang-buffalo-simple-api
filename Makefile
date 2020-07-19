@@ -9,3 +9,6 @@ action:
 
 build:
 	buffalo build
+
+deploy:
+	buffalo heroku deploy

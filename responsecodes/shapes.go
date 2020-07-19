@@ -9,7 +9,7 @@ type SuccessResponse struct {
 }
 
 type Data struct {
-	Message string 
+	Message string
 }
 
 type ErrorResponse struct {
@@ -17,7 +17,7 @@ type ErrorResponse struct {
 }
 
 type Error struct {
-	Code int
+	Code    int
 	Message string
 }
 

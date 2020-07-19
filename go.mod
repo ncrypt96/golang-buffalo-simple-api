@@ -5,6 +5,7 @@ go 1.14
 require (
 	github.com/boltdb/bolt v1.3.1
 	github.com/gobuffalo/buffalo v0.16.12
+	github.com/gobuffalo/buffalo-heroku v1.0.9 // indirect
 	github.com/gobuffalo/envy v1.9.0
 	github.com/gobuffalo/mw-contenttype v0.0.0-20190224202710-36c73cc938f3
 	github.com/gobuffalo/mw-forcessl v0.0.0-20200131175327-94b2bd771862
